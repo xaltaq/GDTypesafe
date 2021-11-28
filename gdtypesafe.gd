@@ -41,7 +41,7 @@ func add_nullables(nullables: Array):
 #     path - path to the script to be loaded, preferrably beginning with "res://"
 #     name - desired name of the preloade class
 #     subclass - optionally define which subclass inside the script will be used
-# For the type {Name}, the generated class will be called Nullable{Name}, with some exceptions.
+# For the type {Name}, the generated class will be called ArrayOf{Name}, with some exceptions.
 #
 # Retuns self so it can be chained with other methods.
 #
@@ -61,7 +61,8 @@ func add_arrays(arrays: Array):
 #     path - path to the script to be loaded, preferrably beginning with "res://"
 #     name - desired name of the preloade class
 #     subclass - optionally define which subclass inside the script will be used
-# For the type {Name}, the generated class will be called Nullable{Name}, with some exceptions.
+# For the key type {Key} and value type {Value}, the generated class will be called
+# DictionaryOf{Key}To{Value}, with some exceptions.
 #
 # Retuns self so it can be chained with other methods.
 #
