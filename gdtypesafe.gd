@@ -309,7 +309,7 @@ class _NullableTemplate:
 		return """
 var {Proxy}: {Class}
 
-func _init(item_or_null) -> void:
+func _init(item_or_null = null) -> void:
 	assert((item is {Class}) or (item == null))
 	{Proxy} = item_or_null
 

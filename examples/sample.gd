@@ -8,7 +8,7 @@ func _run() -> void:
 	var preloadable_class_subclass := ["res://examples/preloadable_class.gd", "PreloadableClassSubclass", "Subclass"]
 
 	GDTypeSafe \
-		.new("res://examples/gen") \
+		.new() \
 		.set_class_name(false) \
 		.add_nullables([
 			"int",
@@ -32,4 +32,4 @@ func _run() -> void:
 		.add_proxies([
 			"GlobalClass",
 		]) \
-		.write()
+		.write("res://examples/gen")
