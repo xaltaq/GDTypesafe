@@ -307,7 +307,7 @@ class _NullableTemplate:
 
 	func _custom_code() -> String:
 		return """
-var {Proxy}: {Class}
+var {Proxy}
 
 func _init(item_or_null = null) -> void:
 	assert((item is {Class}) or (item == null))
