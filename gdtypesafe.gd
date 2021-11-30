@@ -310,7 +310,7 @@ class _NullableTemplate:
 var {Proxy}
 
 func _init(item_or_null = null) -> void:
-	assert((item is {Class}) or (item == null))
+	assert((item_or_null is {Class}) or (item_or_null == null))
 	{Proxy} = item_or_null
 
 func is_present() -> bool:
